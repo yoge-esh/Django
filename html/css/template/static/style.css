@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,500&display=swap');
+*{
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+    background-color:#ccc;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.hero{
+    display: flex;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    padding-right: 15px;
+}
+nav a:hover{
+    text-decoration: underline;
+    color: crimson;
+    animation-delay: ease-in 2.5s ;
+    font-size: 16.5px;
+}
+
+.logo{
+    position: absolute;
+    left: 0%;
+    right: 93.98%;
+    top: 28.57%;
+    bottom: 5.71%;
+}
+.hero-text h1{
+    font-size: 40px;
+}
+.hero-img{
+    margin-top: 5px;
+}
+.hero-img img 
+{
+    height: 440px;
+}
+p{
+    padding-top: 30px;
+    word-spacing: 5px;
+    letter-spacing: 0.9px;
+    font-size: 18px;
+}
+
+.container1
+{
+    display: flex;
+    padding-top: 60px;
+}
+.container1 h2{
+    float: left;
+    padding-top: 10px;
+    width: 150px;
+    
+}
+.container1 p{
+    padding-left: 30px;
+    padding-top: 10px;
+    float: right;
+    font-weight: 400;
+}
+.hello{
+  margin-top: 30px;  
+  color: black;
+  margin-bottom: 5px;  
+}
+.first{
+    float: left;
+    width: 450px;
+    margin-top: 0px;
+}
+.second
+{
+    float: right;
+    margin-bottom: 20px;
+}
+.olla{
+    display: inline-block;
+    padding: 20px;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.first1{
+    float: left;
+    width: 50%;
+    
+}
+.second1{
+    float: right;
+    width: 50%;
+}
