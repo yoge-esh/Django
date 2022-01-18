@@ -115,15 +115,21 @@ pages/views.py
 -> from django.http import HttpResponse
 
 -> def homePageView(request):
+
     -> return HttpResponse('Hello, World!')
 
 
 12. Upadate out projectsurls.py
 # config/urls.py
+
 -> from django.contrib import admin
+
 -> from django.urls import path, include # new
+
 -> urlpatterns = [
+
     -> path('admin/', admin.site.urls),
+    
     -> path('', include('pages.urls')), # new
 ]
 
