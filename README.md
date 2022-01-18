@@ -1,24 +1,35 @@
 1. create a virtual environment 
-python -m venv venv
+
+-> python -m venv venv
+
 
 2. activate venv 
+
 source venv/bin/activate  ---> linux / mac
 #windows users  before activating make sure to run this command in the powershell
 #Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
 
-source(venv)\Scripts\activate ---> windows
+-> source(venv)\Scripts\activate ---> windows
+
 
 3. installing Django
-pip install django~=3.2.8
+
+-> pip install django~=3.2.8
+
 
 4. save requirements.txt 
-pip freeze > requirements.txt
+
+-> pip freeze > requirements.txt
+
 
 5. install requirements.txt
-pip install -r requirements.txt
+
+-> pip install -r requirements.txt
+
 
 6. create Django project
-django-admin startproject config . ---> notice the dot at the end of the project name
+
+-> django-admin startproject config . ---> notice the dot at the end of the project name
 
 ### Django Project Structure ###
 
@@ -36,15 +47,21 @@ django-admin startproject config . ---> notice the dot at the end of the project
 │   
 └── manage.py  -> used to execute various Django commands such as running the local web server or creating a new app.
 
+
 7. Remove the warnings
-python manage.py migrate
+
+-> python manage.py migrate
+
 
 8. Start the Development server
-python manage.py runserver
+
+-> python manage.py runserver
+
 
 9. Create an App ---> Django uses the concept of projects and apps to keep code clean and readable. A single Django project contains one or more apps within it that all work together to power a web application.
 Create our first App
-python manage.py startapp pages
+
+-> python manage.py startapp pages
 
 ### Django App Structure ###
 (helloworld) $ tree
@@ -77,7 +94,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'pages', # add app here
+ ->   'pages', # add app here
 ]
 
 URLs, Views, Models, Templates
@@ -95,20 +112,20 @@ template -> provides styling for the data
 
 11. Update the view.py
 pages/views.py
-from django.http import HttpResponse
+-> from django.http import HttpResponse
 
-def homePageView(request):
-    return HttpResponse('Hello, World!')
+-> def homePageView(request):
+    -> return HttpResponse('Hello, World!')
 
 
 12. Upadate out projectsurls.py
 # config/urls.py
-from django.contrib import admin
-from django.urls import path, include # new
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('pages.urls')), # new
+-> from django.contrib import admin
+-> from django.urls import path, include # new
+-> urlpatterns = [
+    -> path('admin/', admin.site.urls),
+    -> path('', include('pages.urls')), # new
 ]
 
 13. Restart our Django Server
-python manage.py runserver
+-> python manage.py runserver
