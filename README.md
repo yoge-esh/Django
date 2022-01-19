@@ -9,6 +9,7 @@ source venv/bin/activate  ---> linux / mac
 #windows users  before activating make sure to run this command in the powershell
 #Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
 
+-> venv\Scripts\activate ---> windows
 -> source(venv)\Scripts\activate ---> windows
 
 
