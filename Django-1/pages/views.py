@@ -17,3 +17,9 @@ def about(request):
 
 def skill(request):
     return HttpResponse('this is skill page')
+
+def blogs(request):
+    return HttpResponse('hello this is blog page')
+
+def posts(request):
+    return HttpResponse('this is posts pages')
