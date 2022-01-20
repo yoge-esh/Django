@@ -23,3 +23,7 @@ def blogs(request):
 
 def posts(request):
     return HttpResponse('this is posts pages')
+
+# dynamic route 
+def courseDetail(request, courseid):
+    return HttpResponse(courseid)
