@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{title}}</title>
+        <link rel="stylesheet" href="../static/css/style.css">
+    </head>
+
+    <body>
+        <ul>
+            <li class="{% if request.path == '/' %}active{% endif %}"><a href="/">Home</a></li>
+            <!-- we can link the urls with following two method -->
+
+            <li class="{% if request.path == '/aboutus/' %}active{% endif %}"><a href="/aboutus">about</a></li>
+
+            <li class="{% if request.path == '/contact/' %}active{% endif %}"><a href="/contact">contact</a></li> <!-- this is a another way of linking to urls-->
+
+            <li class="{% if request.path == '/service/' %}active{% endif %}"><a href="{% url 'service' %}">services</a></li>
+                <!-- this is a another way of linking to urls-->
+                
+        </ul>

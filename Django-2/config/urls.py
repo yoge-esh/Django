@@ -6,8 +6,9 @@ from config import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home),
-    path('about-us/', views.aboutMe),
-    path('courses/', views.courses),
+    path('aboutus/', views.aboutUs),
+    path('contact/', views.contact),
+    path('service/', views.service, name='service'), # this name is use to generate url in header.html page 
  
     # Dynamic Routes
     # dynamic route : str: int: slug

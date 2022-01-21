@@ -1,26 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
+{% block content %}
+        <h1>This is a Home page</h1>
+        <h3>Data are rendering here</h3>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{{title}}</title>
-        <style>
-            .main {
-                background-color: crimson;
-                color: aliceblue;
-                padding: 10px;
-                text-decoration: none;
-                list-style: none;
-            }
-        </style>
-    </head>
-
-    <body>
         {% for detail in my %}
-        <div class="main">{{detail}}</div>
+        <div class="main"> {{forloop.counter0}} : {{detail}}</div>
+        <!-- <div class="main"> {{forloop.revcounter}} : {{detail}}</div> -->
+        <!-- <div class="main"> {{forloop.first}} : {{detail}}</div>  make first one is true and other is True -->
+        <!-- <div class="main"> {{forloop.last}} : {{detail}} </div> -->
         {% endfor %}
-    </body>
 
-</html>
+
+        <br />
+        <table border='1' cellpadding='10'>
+
+            <tr>
+                <th>Name</th>
+                <th>Phone</th>
+            </tr>
+            {% for d in data%}
+            <tr>
+                <th>{{forloop.counter}}. {{d.name}}</th>
+                <th>{{d.phone}}</th>
+            </tr>
+            {% endfor %}
+
+        </table>
+
+
+
+        <!-- if/else/elif  -->
+<!-- using if/else condition -->
+    {% if numbers|length > 0 %}
+        <br>
+       {% for n in numbers %}
+
+       <!-- using of if in Django -->
+            {% if n > 30 %}
+            <div>{{n}}</div>
+            {% endif %}
+
+       {% endfor %}
+    
+    {% else %}
+        No Data Found!
+    {% endif %}
+
+
+    {% endblock %}
