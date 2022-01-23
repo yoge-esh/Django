@@ -8,6 +8,7 @@ urlpatterns = [
     path('', views.home),
     path('aboutus/', views.aboutUs),
     path('contact/', views.contact),
+    # path('thankyou/', views.thankyou),
     path('service/', views.service, name='service'), # this name is use to generate url in header.html page 
  
     # Dynamic Routes

@@ -27,6 +27,9 @@ def contact(request):
 def service(request):
     return render(request, 'service.html')
 
+# def thankyou(request):
+#     return render(request, 'thankyou.html')
+
 # dynamic Routes
 def courseDetail(request,id):
     return HttpResponse(id)

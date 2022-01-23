@@ -1,4 +1,64 @@
-    
-   <h6>this is a footer area</h6> 
-</body>
-</html>
+{% block content %} 
+  <footer>
+   <div class="social-links">
+       <section class="about">
+           <h2>About</h2>
+           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero quis illum, distinctio ipsa eum
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, quae? Lorem ipsum dolor sit amet
+               consectetur adipisicing elit. Totam provident sunt molestias architecto. Unde, nisi officia.
+               Veniam molestias minus totam neque temporibus enim amet ipsa?
+               dolorum?</p>
+           <div class="social-icon-footer">
+               <i class="fab fa-facebook"></i>
+               <i class="fab fa-twitter-square"></i>
+               <i class="fab fa-google-plus-square"></i>
+               <i class="fab fa-instagram"></i>
+               <i class="fas fa-rss-square"></i>
+               <i class="fab fa-youtube-square"></i>
+               <i class="fab fa-whatsapp-square"></i>
+               <i class="fab fa-linkedin"></i>
+               <i class="fab fa-pinterest"></i>
+               <i class="fab fa-viber"></i>
+           </div>
+       </section>
+       <section class="instagram">
+           <h2>Instagram</h2>
+           <img src="../static/img/aside2.jpg" alt="">
+           <img src="../static/img/aside3.jpg" alt="">
+           <img src="../static/img/aside4.jpg" alt="">
+           <img src="../static/img/aside5.jpg" alt="">
+           <img src="../static/img/aside3.jpg" alt="">
+           <img src="../static/img/aside2.jpg" alt="">
+           <img src="../static/img/aside4.jpg" alt="">
+           <img src="../static/img/aside5.jpg" alt="">
+           <img src="../static/img/aside3.jpg" alt="">
+           <button type="button" class="footer-button"  onclick="location.href='https://www.instagram.com/'" value="Go to Instagram">View Instagram</a></button>
+           <input type="button" class="footer-button" onclick="location.href='https://google.com';" value="Go to Google" />
+
+       </section>
+       <section class="subscribe">
+           <h2>Subscribe to News Today</h2>
+           <p>Enter your email to get daily news update!</p>
+
+           <input type="email" name="" id="input" placeholder="Email Address">
+
+           <button type="submit" class="footer-button">Subscribe</button>
+           
+       </section>
+   </div>
+   <div class="copyright">Copyright © 2021 | created by Yogesh Khanal</div>
+</footer>
+
+        <!-- Boostrap cdn  -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+            crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+            crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+            {% endblock %}
